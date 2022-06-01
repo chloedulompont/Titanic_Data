@@ -13,6 +13,6 @@ app.use(bodyParser.urlencoded({ extended: false}));
 app.use(bodyParser.json())
 
 app.use('/passengers', passengerRouter);
-app.post('/login/:username&:password', login)
+app.post('/login', login)
 
 module.exports = app;

@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+  --main-color: #000;
+}
+
+a {
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--main-color);
+  text-decoration: underline;
+}
