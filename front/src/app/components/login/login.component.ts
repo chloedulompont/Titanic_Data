@@ -33,7 +33,7 @@ export class LoginComponent implements OnInit {
       this.authService.login(username,password).subscribe(
         (data) => {
           console.log('logged in');
-          this.authService.setSession(data);
+          this.authService.setSession((data as {accessToken: string}));
           this.route.navigateByUrl('/passengers');
         },
         error => {
